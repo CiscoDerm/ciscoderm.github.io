@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outils | Maxim Dufosse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-text">MD</span>
+        </div>
+        <div class="header-content">
+            <h1>MAXIM <span>DUFOSSE</span></h1>
+            <p class="tagline">Cybersécurité · Réseaux · Développement</p>
+        </div>
+        <nav>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="primary-navigation" class="primary-navigation">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li class="active"><a href="outils.html">Outils</a></li>
+                <li><a href="index.html#contact" class="cta-button">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tools-hero">
+            <div class="tools-hero-content">
+                <h2 class="glitch" data-text="Mes Outils">Mes Outils</h2>
+                <p>Découvrez les outils et scripts que j'ai développés</p>
+            </div>
+        </section>
+
+        <section class="tools">
+            <div class="section-header">
+                <h2>Outils de Cybersécurité</h2>
+                <div class="separator"></div>
+            </div>
+            
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-title">
+                            <h3>NetScanPro</h3>
+                            <span class="tool-badge">Reconnaissance</span>
+                        </div>
+                        <div class="tool-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="tool-content">
+                        <p class="tool-description">Outil de reconnaissance réseau avancé permettant d'effectuer des scans de ports, détection de services et fingerprinting d'OS.</p>
+                        <div class="tool-details">
+                            <h4>Fonctionnalités :</h4>
+                            <ul>
+                                <li>Scan de ports TCP/UDP configurable</li>
+                                <li>Détection de services et versions</li>
+                                <li>Identification d'OS par analyse passive</li>
+                                <li>Export des résultats en plusieurs formats</li>
+                            </ul>
+                            <div class="tool-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Scapy</span>
+                                <span class="tech-tag">Nmap</span>
+                            </div>
+                        </div>
+                        <div class="tool-links">
+                            <a href="https://github.com/CiscoDerm/NetScanPro" target="_blank" class="tool-link"><i class="fab fa-github"></i> Code source</a>
+                            <a href="#" class="tool-link demo-link"><i class="fas fa-play"></i> Demo en ligne</a>
+                            <a href="downloads/NetScanPro.zip" class="tool-link download-link"><i class="fas fa-download"></i> Télécharger</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-title">
+                            <h3>SecLogParser</h3>
+                            <span class="tool-badge">Analyse</span>
+                        </div>
+                        <div class="tool-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                    </div>
+                    <div class="tool-content">
+                        <p class="tool-description">Outil d'analyse de logs de sécurité permettant de détecter des comportements suspects et de générer des alertes personnalisées.</p>
+                        <div class="tool-details">
+                            <h4>Fonctionnalités :</h4>
+                            <ul>
+                                <li>Analyse de logs Apache, Nginx, Windows Event</li>
+                                <li>Détection d'attaques par pattern matching</li>
+                                <li>Corrélation d'événements multi-sources</li>
+                                <li>Alertes configurables (mail, Slack, Discord)</li>
+                            </ul>
+                            <div class="tool-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Regex</span>
+                                <span class="tech-tag">ElasticSearch</span>
+                            </div>
+                        </div>
+                        <div class="tool-links">
+                            <a href="https://github.com/CiscoDerm/SecLogParser" target="_blank" class="tool-link"><i class="fab fa-github"></i> Code source</a>
+                            <a href="#" class="tool-link demo-link"><i class="fas fa-play"></i> Demo en ligne</a>
+                            <a href="downloads/SecLogParser.zip" class="tool-link download-link"><i class="fas fa-download"></i> Télécharger</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-title">
+                            <h3>VulnTracker</h3>
+                            <span class="tool-badge">Veille</span>
+                        </div>
+                        <div class="tool-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                    </div>
+                    <div class="tool-content">
+                        <p class="tool-description">Outil de suivi et d'alerte sur les nouvelles vulnérabilités publiées, avec possibilité de filtrage par critères.</p>
+                        <div class="tool-details">
+                            <h4>Fonctionnalités :</h4>
+                            <ul>
+                                <li>Agrégation de données depuis NVD, CVE, ExploitDB</li>
+                                <li>Filtrage par produit, vendeur, score CVSS</li>
+                                <li>Détection d'exploits disponibles</li>
+                                <li>Alertes par email ou webhook</li>
+                            </ul>
+                            <div class="tool-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">API REST</span>
+                            </div>
+                        </div>
+                        <div class="tool-links">
+                            <a href="https://github.com/CiscoDerm/VulnTracker" target="_blank" class="tool-link"><i class="fab fa-github"></i> Code source</a>
+                            <a href="#" class="tool-link demo-link"><i class="fas fa-play"></i> Demo en ligne</a>
+                            <a href="downloads/VulnTracker.zip" class="tool-link download-link"><i class="fas fa-download"></i> Télécharger</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="scripts">
+            <div class="section-header">
+                <h2>Scripts Utilitaires</h2>
+                <div class="separator"></div>
+            </div>
+            
+            <div class="scripts-container">
+                <div class="script-item">
+                    <div class="script-header">
+                        <div class="script-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h3>docker-sec-check.sh</h3>
+                    </div>
+                    <p>Script d'audit de sécurité pour conteneurs Docker qui vérifie les configurations, permissions et vulnérabilités.</p>
+                    <div class="script-tech">
+                        <span class="tech-tag">Bash</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <a href="https://github.com/CiscoDerm/security-scripts/docker-sec-check.sh" target="_blank" class="script-link">Voir sur GitHub</a>
+                </div>
+                
+                <div class="script-item">
+                    <div class="script-header">
+                        <div class="script-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h3>linux-hardening.py</h3>
+                    </div>
+                    <p>Script Python pour renforcer la sécurité d'un système Linux selon les recommandations CIS Benchmark.</p>
+                    <div class="script-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Linux</span>
+                    </div>
+                    <a href="https://github.com/CiscoDerm/security-scripts/linux-hardening.py" target="_blank" class="script-link">Voir sur GitHub</a>
+                </div>
+                
+                <div class="script-item">
+                    <div class="script-header">
+                        <div class="script-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h3>wifi-monitor.sh</h3>
+                    </div>
+                    <p>Script de surveillance pour réseaux Wi-Fi qui détecte les points d'accès non autorisés et les tentatives de connexion suspectes.</p>
+                    <div class="script-tech">
+                        <span class="tech-tag">Bash</span>
+                        <span class="tech-tag">Aircrack-ng</span>
+                    </div>
+                    <a href="https://github.com/CiscoDerm/security-scripts/wifi-monitor.sh" target="_blank" class="script-link">Voir sur GitHub</a>
+                </div>
+                
+                <div class="script-item">
+                    <div class="script-header">
+                        <div class="script-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h3>ssl-check.py</h3>
+                    </div>
+                    <p>Outil qui vérifie la configuration SSL/TLS d'un serveur web et signale les problèmes (protocoles obsolètes, suites de chiffrement faibles, etc.)</p>
+                    <div class="script-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenSSL</span>
+                    </div>
+                    <a href="https://github.com/CiscoDerm/security-scripts/ssl-check.py" target="_blank" class="script-link">Voir sur GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources">
+            <div class="section-header">
+                <h2>Ressources & Documentation</h2>
+                <div class="separator"></div>
+            </div>
+            
+            <div class="resources-container">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Guide de Sécurisation Linux</h3>
+                    <p>Guide complet pour sécuriser un système Linux, des bases jusqu'aux configurations avancées.</p>
+                    <a href="resources/linux-hardening-guide.pdf" class="resource-link" target="_blank">Télécharger (PDF)</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Cheatsheet OWASP Top 10</h3>
+                    <p>Résumé des principales vulnérabilités web selon OWASP et méthodes de protection.</p>
+                    <a href="resources/owasp-cheatsheet.pdf" class="resource-link" target="_blank">Télécharger (PDF)</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Tutoriel Docker Sécurisé</h3>
+                    <p>Guide pas à pas pour déployer des conteneurs Docker sécurisés en environnement de production.</p>
+                    <a href="resources/docker-security.pdf" class="resource-link" target="_blank">Télécharger (PDF)</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Documentation HomeLab</h3>
+                    <p>Documentation de mon installation HomeLab personnel avec schémas d'architecture.</p>
+                    <a href="resources/homelab-documentation.pdf" class="resource-link" target="_blank">Télécharger (PDF)</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Maxim Dufosse - Tous droits réservés</p>
+            <p>Conçu et développé par Maxim Dufosse</p>
+        </div>
+    </footer>
+</body>
+</html>
