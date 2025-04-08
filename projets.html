@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | Maxim Dufosse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-text">MD</span>
+        </div>
+        <div class="header-content">
+            <h1>MAXIM <span>DUFOSSE</span></h1>
+            <p class="tagline">Cybersécurité · Réseaux · Développement</p>
+        </div>
+        <nav>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="primary-navigation" class="primary-navigation">
+                <li><a href="index.html">Accueil</a></li>
+                <li class="active"><a href="projets.html">Projets</a></li>
+                <li><a href="outils.html">Outils</a></li>
+                <li><a href="index.html#contact" class="cta-button">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-hero">
+            <div class="projects-hero-content">
+                <h2 class="glitch" data-text="Mes Projets">Mes Projets</h2>
+                <p>Découvrez mes réalisations en cybersécurité et développement</p>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="section-header">
+                <h2>Projets Majeurs</h2>
+                <div class="separator"></div>
+            </div>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">
+                            <h3>HOMIST</h3>
+                            <span class="project-badge">HomeLab</span>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Création d'un HomeLab personnel pour pratiquer et approfondir mes connaissances en cybersécurité et infrastructure réseau.</p>
+                        <div class="project-details">
+                            <h4>Matériel utilisé :</h4>
+                            <ul>
+                                <li>2x DELL PowerEdge R720</li>
+                                <li>Switch Manageable</li>
+                                <li>Firewall</li>
+                                <li>Routeur Fortinet</li>
+                                <li>Sonde IPS</li>
+                            </ul>
+                            <h4>Technologies :</h4>
+                            <ul>
+                                <li>Docker</li>
+                                <li>Pipelines CI-CD</li>
+                                <li>Virtualisation</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                            <a href="#homist-modal" class="project-link modal-trigger"><i class="fas fa-info-circle"></i> Plus d'infos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">
+                            <h3>E-Corp</h3>
+                            <span class="project-badge">Réseau PME</span>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Conception et implémentation d'une infrastructure réseau sécurisée pour une PME fictive, avec segmentation réseau et services essentiels.</p>
+                        <div class="project-details">
+                            <h4>Configuration réseau :</h4>
+                            <ul>
+                                <li>Mise en place de règles FireWall</li>
+                                <li>Segmentation réseau (VLAN)</li>
+                                <li>DMZ pour services exposés</li>
+                            </ul>
+                            <h4>Technologies :</h4>
+                            <ul>
+                                <li>Proxmox / VMware ESXI</li>
+                                <li>Kubernetes</li>
+                                <li>Active Directory</li>
+                                <li>Partages de fichier (Linux / Windows)</li>
+                                <li>GitLab / Grafana</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                            <a href="#ecorp-modal" class="project-link modal-trigger"><i class="fas fa-info-circle"></i> Plus d'infos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">
+                            <h3>TryHackMe</h3>
+                            <span class="project-badge">Apprentissage</span>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Parcours d'apprentissage en cybersécurité sur la plateforme TryHackMe, avec une position dans le top 2% des utilisateurs.</p>
+                        <div class="project-details">
+                            <h4>Domaines étudiés :</h4>
+                            <ul>
+                                <li>RED TEAM / SOC ANALYST</li>
+                                <li>OWASP TOP 10</li>
+                                <li>DevSecOps</li>
+                                <li>Forensic</li>
+                            </ul>
+                            <h4>Compétitions :</h4>
+                            <ul>
+                                <li>Advent Of Cyber 2023</li>
+                                <li>BARBHACK 2024 (23/40)</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://tryhackme.com/p/CiscoDerm" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Voir profil</a>
+                            <a href="#tryhackme-modal" class="project-link modal-trigger"><i class="fas fa-info-circle"></i> Plus d'infos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-projects">
+            <div class="section-header">
+                <h2>Autres Projets</h2>
+                <div class="separator"></div>
+            </div>
+            
+            <div class="other-projects-grid">
+                <div class="other-project-card">
+                    <div class="other-project-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Analyse de vulnérabilités</h3>
+                    <p>Projet d'identification et d'analyse des vulnérabilités dans diverses applications web.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">OWASP</span>
+                        <span class="tech-tag">Burp Suite</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+                
+                <div class="other-project-card">
+                    <div class="other-project-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Bot Discord Sécurité</h3>
+                    <p>Développement d'un bot Discord pour surveiller et notifier les failles de sécurité récentes.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Discord API</span>
+                        <span class="tech-tag">CVE</span>
+                    </div>
+                </div>
+                
+                <div class="other-project-card">
+                    <div class="other-project-icon">
+                        <i class="fas fa-ethernet"></i>
+                    </div>
+                    <h3>Simulation d'attaque DDoS</h3>
+                    <p>Projet académique de simulation d'attaque DDoS dans un environnement contrôlé.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">GNS3</span>
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">Wireshark</span>
+                    </div>
+                </div>
+                
+                <div class="other-project-card">
+                    <div class="other-project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Système de détection d'intrusions</h3>
+                    <p>Implémentation d'un IDS basé sur l'apprentissage automatique pour détecter les intrusions réseau.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Snort</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div id="homist-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>HOMIST - HomeLab</h2>
+            <div class="modal-body">
+                <p>Mon HomeLab personnel est un environnement complet pour tester, pratiquer et approfondir mes connaissances en cybersécurité. Cette infrastructure me permet d'expérimenter différentes configurations réseau, de mettre en place des solutions de sécurité et de tester des scénarios d'attaque/défense.</p>
+                
+                <h3>Infrastructure :</h3>
+                <ul>
+                    <li>2 serveurs DELL PowerEdge R720 configurés en cluster</li>
+                    <li>Switch manageable pour la segmentation réseau</li>
+                    <li>Firewall dédié avec règles personnalisées</li>
+                    <li>Routeur Fortinet pour la gestion avancée du trafic</li>
+                    <li>Sonde IPS pour la détection des intrusions</li>
+                </ul>
+                
+                <h3>Services déployés :</h3>
+                <ul>
+                    <li>Environnement de conteneurisation Docker</li>
+                    <li>CI/CD Pipelines pour l'automatisation du déploiement</li>
+                    <li>Systèmes de surveillance et d'alerte</li>
+                    <li>Honeypots pour l'analyse des méthodes d'attaque</li>
+                    <li>Plateforme de journalisation centralisée</li>
+                </ul>
+                
+                <div class="modal-image">
+                    <img src="assets/img/homelab-diagram.png" alt="HomeLab Diagram">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ecorp-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>E-Corp - Réseau PME Sécurisé</h2>
+            <div class="modal-body">
+                <p>Le projet E-Corp consiste en la conception et l'implémentation d'une infrastructure réseau sécurisée pour une PME fictive. Ce projet démontre ma capacité à mettre en place une solution complète répondant aux besoins d'une entreprise tout en assurant un niveau de sécurité optimal.</p>
+                
+                <h3>Architecture réseau :</h3>
+                <ul>
+                    <li>Segmentation réseau complète avec VLANs dédiés</li>
+                    <li>Zone démilitarisée (DMZ) pour les services exposés</li>
+                    <li>Règles de firewall granulaires basées sur le principe du moindre privilège</li>
+                    <li>VPN pour les accès distants sécurisés</li>
+                </ul>
+                
+                <h3>Technologies et services :</h3>
+                <ul>
+                    <li>Hyperviseurs Proxmox et VMware ESXI pour la virtualisation</li>
+                    <li>Kubernetes pour l'orchestration des conteneurs</li>
+                    <li>Active Directory pour la gestion des identités</li>
+                    <li>Partages de fichiers multiplateforme (Linux/Windows)</li>
+                    <li>GitLab pour le contrôle de version et l'intégration continue</li>
+                    <li>Grafana pour la supervision et les tableaux de bord</li>
+                </ul>
+                
+                <div class="modal-image">
+                    <img src="assets/img/ecorp-network.png" alt="E-Corp Network Architecture">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tryhackme-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>TryHackMe - Apprentissage</h2>
+            <div class="modal-body">
+                <p>Mon parcours sur TryHackMe représente mon engagement continu dans l'apprentissage de la cybersécurité. Actuellement dans le top 2% de la plateforme, j'ai complété de nombreux challenges et rooms couvrant différents aspects de la sécurité informatique.</p>
+                
+                <h3>Domaines de compétence :</h3>
+                <ul>
+                    <li>Red Team : exploitation de vulnérabilités, pivoting, élévation de privilèges</li>
+                    <li>Blue Team : analyse SOC, détection d'intrusions, réponse aux incidents</li>
+                    <li>DevSecOps : intégration de la sécurité dans le cycle de développement</li>
+                    <li>Forensic : analyse post-intrusion, collecte de preuves numériques</li>
+                </ul>
+                
+                <h3>Compétitions et challenges :</h3>
+                <ul>
+                    <li>Advent Of Cyber 2023 - Série de challenges quotidiens de décembre</li>
+                    <li>BARBHACK 2024 - Participation en équipe (classement 23/40)</li>
+                    <li>Rooms OWASP Top 10 - Exploitation et défense contre les vulnérabilités web courantes</li>
+                </ul>
+                
+                <div class="modal-image">
+                    <img src="assets/img/tryhackme-profile.png" alt="TryHackMe Profile">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Maxim Dufosse - Tous droits réservés</p>
+            <p>Conçu et développé par Maxim Dufosse</p>
+        </div>
+    </footer>
+</body>
+</html>
